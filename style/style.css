@@ -3,8 +3,9 @@
 :root {
     --main-bg-color: #100F1E;
     --text-color: #D8D8CF;
-    --emphasis-color: #22d4fd;
+    --primary-emphasis-color: #22d4fd;
     --hover-color: #15142E;
+    --secondary-emphasis-color: #FF33D1;
 
     --primary-font: 'Krona One', sans-serif;
     --secundary-font: 'Montserrat', sans-serif;
@@ -34,7 +35,7 @@ header {
     font-family: var(--secundary-font);
     font-size: 1.4rem;
     font-weight: 600;
-    color: var(--emphasis-color);
+    color: var(--primary-emphasis-color);
     text-decoration: none;
 }
 
@@ -59,12 +60,16 @@ header {
 }
 
 .title-emphasis {
-    color: var(--emphasis-color);
+    color: var(--secondary-emphasis-color);
 }
 
 .display__content__text {
     font-size: 1.4rem;
     font-family: var(--secundary-font);
+}
+
+.technology__emphasis {
+    color: var(--secondary-emphasis-color);
 }
 
 .display__content__buttons {
@@ -88,7 +93,7 @@ header {
     width: 50%;
     text-align: center;
     border-radius: 8px;
-    border: 2px solid var(--emphasis-color);
+    border: 2px solid var(--primary-emphasis-color);
     font-size: 1.4rem;
     font-weight: 600;
     padding: 20px 0;
@@ -107,12 +112,20 @@ header {
 
 footer {
     color: var(--main-bg-color);
-    background-color: var(--emphasis-color);
+    background-color: var(--secondary-emphasis-color);
     padding: 20px;
     text-align: center;
     font-family: var(--secundary-font);
     font-size: 1.25rem;
     font-weight: 400;
+}
+
+.footer__home {
+    background-color: var(--secondary-emphasis-color);
+}
+
+.footer__about {
+    background-color: var(--primary-emphasis-color);
 }
 
 @media (max-width: 1200px) {
@@ -123,7 +136,7 @@ footer {
     .header__menu {
         justify-content: center;
     }
-    
+
     .display {
         flex-direction: column-reverse;
         padding: 0% 5% 5% 5%;

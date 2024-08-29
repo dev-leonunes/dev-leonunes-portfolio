@@ -70,11 +70,6 @@ header {
     font-family: var(--primary-font);
 }
 
-.display__content__title__about {
-    font-size: 1.8rem;
-    font-family: var(--primary-font);
-}
-
 .title-emphasis {
     color: var(--secondary-emphasis-color);
 }
@@ -143,10 +138,6 @@ footer {
     font-family: var(--secundary-font);
     font-size: 0.8rem;
     font-weight: 400;
-}
-
-.footer__home {
-    background-color: var(--secondary-emphasis-color);
 }
 
 .footer__about {

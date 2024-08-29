@@ -70,12 +70,22 @@ header {
     font-family: var(--primary-font);
 }
 
+.display__content__title__about {
+    font-size: 1.8rem;
+    font-family: var(--primary-font);
+}
+
 .title-emphasis {
     color: var(--secondary-emphasis-color);
 }
 
 .display__content__text {
     font-size: 1.4rem;
+    font-family: var(--secundary-font);
+}
+
+.display__content__text__about {
+    font-size: 1.2rem;
     font-family: var(--secundary-font);
 }
 

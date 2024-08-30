@@ -19,13 +19,54 @@
         </nav>
     </header>
 
-    <main class="display">
-        <section class="display__content">
+    <main class="display" id="display__contact">
+        <section class="display__content__contact">
             <h1 class="display__content__title">Contato</h1>
-            <p class="display__content__text">
-            </p>
+
+            <div class="display__social__links">
+                <h2 class="display__social__links__subtitle">Redes Sociais</h2>
+                <a class="display__social__links__button" href="https://github.com/dev-leonunes" target="_blank">
+                    <img src="../assets/github.png" alt="GitHub">
+                </a>
+                <a class="display__social__links__button" href="https://www.linkedin.com/in/leonardo-nunes-dev"
+                    target="_blank">
+                    <img src="../assets/linkedin.png" alt="LinkedIn">
+                </a>
+                <a class="display__social__links__button" href="https://www.instagram.com/leonnunes07" target="_blank">
+                    <img src="../assets/instagram.png" alt="Instagram">
+                </a>
+            </div>
+
+            <div class="display__social__links" id="social-links-contacts">
+                <h2 class="display__social__links__subtitle">Contatos</h2>
+                <a class="display__social__links__button" href="https://wa.me/5573991225081" target="_blank">
+                    <img src="../assets/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a class="display__social__links__button" href="mailto:leonunes07@outlook.com" target="_blank">
+                    <img src="../assets/e-mail-link.png" alt="E-mail">
+                </a>
+            </div>
+
+
         </section>
-        <!-- <img class="display__img" src="../assets/devleonunes.png" alt="foto do dev leo nunes"> -->
+
+        <div class="display__form">
+            <form action="https://formspree.io/f/{your_form_id}" method="POST" class="contact__form">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Nome" required>
+
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+                <label for="message"></label>
+                <textarea id="message" name="message" rows="4" placeholder="Mensagem" required></textarea>
+
+                <button class="display__form__button" type="submit">
+                    <img src="../assets/e-mail.png">
+                    Enviar
+                </button>
+            </form>
+        </div>
     </main>
 
     <footer class="footer">

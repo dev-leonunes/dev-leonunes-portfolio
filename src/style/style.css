@@ -51,6 +51,10 @@ header {
     gap: 70px;
 }
 
+#display__contact {
+    align-items: flex-start;
+}
+
 .display__content__home {
     width: 50%;
     display: flex;
@@ -63,6 +67,116 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.display__content__contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.display__social__links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.display__social__links__subtitle {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.display__social__links__button {
+    display: inline-block;
+    border: 1.5px solid var(--primary-emphasis-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px;
+    transition: border-color 0.3s ease;
+}
+
+#social-links-contacts {
+    margin-top: 50px;
+}
+
+.display__social__links__button img {
+    display: block;
+    height: 24px;
+    color: var(--primary-emphasis-color);
+}
+
+.display__social__links__button:hover {
+    background-color: var(--hover-color);
+}
+
+.display__form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+#name,
+#email,
+#message {
+    width: 100%;
+    max-width: 500px;
+    padding: 18px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1.5px solid var(--main-bg-color);
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    font-family: var(--secundary-font);
+    font-size: 1rem;
+}
+
+#name:focus,
+#email:focus,
+#message:focus {
+    border-color: var(--secondary-emphasis-color);
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+::placeholder {
+    color: var(--text-color);
+}
+
+#message {
+    resize: none;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.display__form__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -8px;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--main-bg-color);
+    border: 1.5px solid var(--secondary-emphasis-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--secundary-font);
+}
+
+.display__form__button img {
+    height: 20px;
+}
+
+.display__form__button:hover {
+    background-color: var(--secondary-emphasis-color);
 }
 
 .display__content__title {

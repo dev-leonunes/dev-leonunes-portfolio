@@ -4,8 +4,9 @@
     --main-bg-color: #100F1E;
     --text-color: #D8D8CF;
     --primary-emphasis-color: #22d4fd;
-    --hover-color: #15142E;
     --secondary-emphasis-color: #FF33D1;
+    --hover-color: #15142E;
+    --secondary-hover-color: #191839;
 
     --primary-font: 'Krona One', sans-serif;
     --secundary-font: 'Montserrat', sans-serif;
@@ -90,7 +91,7 @@ header {
 
 .display__social__links__button {
     display: inline-block;
-    border: 1.5px solid var(--primary-emphasis-color);
+    border: 3px solid var(--secondary-hover-color);
     border-radius: 10px;
     padding: 10px;
     margin: 0 10px;
@@ -109,6 +110,7 @@ header {
 
 .display__social__links__button:hover {
     background-color: var(--hover-color);
+    border-color: var(--primary-emphasis-color);
 }
 
 .display__form {

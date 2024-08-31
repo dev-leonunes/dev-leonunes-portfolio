@@ -70,6 +70,12 @@ header {
     gap: 10px;
 }
 
+.display__content__resume {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .display__content__contact {
     width: 50%;
     display: flex;
@@ -91,7 +97,7 @@ header {
 
 .display__social__links__button {
     display: inline-block;
-    border: 3px solid var(--secondary-hover-color);
+    border: 2.2px solid var(--secondary-hover-color);
     border-radius: 10px;
     padding: 10px;
     margin: 0 10px;
@@ -186,6 +192,14 @@ header {
     font-family: var(--primary-font);
 }
 
+.display__content__resume__subtitle {
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: var(--primary-emphasis-color);
+}
+
 .title-emphasis {
     color: var(--secondary-emphasis-color);
 }
@@ -193,6 +207,31 @@ header {
 .display__content__text {
     font-size: 1.4rem;
     font-family: var(--secundary-font);
+}
+
+.display__content__resume__text {
+    font-size: 1.4rem;
+    font-family: var(--secundary-font);
+    margin-left: 20px;
+}
+
+.display__content__resume__text span {
+    color: var(--secondary-emphasis-color);
+    font-size: 30px;
+}
+
+.resume__text__span:hover {
+    color: var(--secondary-emphasis-color);
+}
+
+.display__content__resume__text svg {
+    height: 30px;
+    fill: var(--text-color);
+    margin-right: 5px;
+}
+
+.display__content__resume__text svg:hover {
+    fill: var(--secondary-emphasis-color);
 }
 
 .display__content__text__about {

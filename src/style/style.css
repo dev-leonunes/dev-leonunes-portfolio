@@ -105,6 +105,10 @@ header {
     width: 50%;
 }
 
+.project__box__2 img {
+    width: 100%;
+}
+
 .display__social__links {
     margin-top: 30px;
     text-align: center;

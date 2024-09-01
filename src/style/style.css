@@ -220,10 +220,6 @@ header {
     font-size: 30px;
 }
 
-.resume__text__span:hover {
-    color: var(--secondary-emphasis-color);
-}
-
 .display__content__resume__text svg {
     height: 30px;
     fill: var(--text-color);

@@ -145,6 +145,14 @@ header {
     transition: border-color 0.3s ease;
 }
 
+.display__social__links__button svg {
+    height: 24px;
+    fill: var(--primary-emphasis-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #social-links-contacts {
     margin-top: 50px;
 }
@@ -220,8 +228,9 @@ header {
     font-family: var(--secundary-font);
 }
 
-.display__form__button img {
-    height: 20px;
+.display__form__button svg {
+    height: 16px;
+    fill: var(--text-color);
 }
 
 .display__form__button:hover {
@@ -308,6 +317,12 @@ header {
     text-decoration: none;
     color: var(--text-color);
     font-family: var(--secundary-font);
+}
+
+.display__content__buttons__links svg {
+    height: 30px;
+    fill: var(--primary-emphasis-color);
+    margin-right: 5px;
 }
 
 .display__projects__links {

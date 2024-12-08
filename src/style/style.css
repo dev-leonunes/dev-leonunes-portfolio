@@ -329,8 +329,7 @@ header {
     margin-right: 5px;
 }
 
-.display__projects__links,
-.display__content__resume__download {
+.display__projects__links {
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -346,13 +345,37 @@ header {
     font-family: var(--secundary-font);
 }
 
-.display__projects__links:hover,
-.display__content__resume__download:hover {
+.display__content__resume__download {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 20%;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid var(--secondary-hover-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--secundary-font);
+}
+
+.display__projects__links:hover {
     border-color: var(--secondary-emphasis-color);
     background-color: var(--hover-color);
 }
 
-.display__projects__links svg,
+.display__content__resume__download:hover {
+    border-color: var(--primary-emphasis-color);
+    background-color: var(--hover-color);
+}
+
+.display__projects__links svg {
+    fill: var(--text-color);
+    width: 20px;
+}
+
 .display__content__resume__download svg {
     fill: var(--text-color);
     width: 20px;

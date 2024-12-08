@@ -60,10 +60,6 @@ header {
     gap: 70px;
 }
 
-#display__contact {
-    align-items: flex-start;
-}
-
 .display__content__home {
     width: 50%;
     display: flex;
@@ -333,7 +329,8 @@ header {
     margin-right: 5px;
 }
 
-.display__projects__links {
+.display__projects__links,
+.display__content__resume__download {
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -349,12 +346,14 @@ header {
     font-family: var(--secundary-font);
 }
 
-.display__projects__links:hover {
+.display__projects__links:hover,
+.display__content__resume__download:hover {
     border-color: var(--secondary-emphasis-color);
     background-color: var(--hover-color);
 }
 
-.display__projects__links svg {
+.display__projects__links svg,
+.display__content__resume__download svg {
     fill: var(--text-color);
     width: 20px;
 }

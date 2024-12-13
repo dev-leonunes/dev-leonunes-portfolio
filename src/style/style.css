@@ -403,10 +403,6 @@ footer {
     font-weight: 400;
 }
 
-.footer__about {
-    background-color: var(--primary-emphasis-color);
-}
-
 @media (max-width: 1200px) {
     header {
         padding: 4%;

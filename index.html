@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="light-mode">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,12 @@
 
 <body>
     <header>
+        <section class="header__theme">
+            <div class="theme-slider" id="theme-slider">
+                <div class="theme-icon"></div>
+            </div>
+        </section>
+
         <div class="container">
             <input type="checkbox" id="checkbox-menu">
 
@@ -20,6 +26,7 @@
                 <span></span>
             </label>
         </div>
+
         <nav class="header__menu" id="menu">
             <a class="header__menu__link" href="index.html">Início</a>
             <a class="header__menu__link" href="./src/pages/about.html">Sobre mim</a>

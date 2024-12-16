@@ -7,6 +7,20 @@
     --secondary-emphasis-color: #FF33D1;
     --hover-color: #15142E;
     --secondary-hover-color: #191839;
+    --theme-color: #080715;
+
+    --primary-font: 'Krona One', sans-serif;
+    --secundary-font: 'Montserrat', sans-serif;
+}
+
+.light-mode:root {
+    --main-bg-color: #FBFBF6;
+    --text-color: #555;
+    --primary-emphasis-color: #22d4fd;
+    --secondary-emphasis-color: #FF33D1;
+    --hover-color: #E0E0E0;
+    --secondary-hover-color: #D8D8CF;
+    --theme-color: #FDFDFA;
 
     --primary-font: 'Krona One', sans-serif;
     --secundary-font: 'Montserrat', sans-serif;
@@ -15,6 +29,39 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+.header__theme {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.theme-slider {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background-color: var(--secondary-hover-color);
+    border-radius: 150px;
+    cursor: pointer;
+    margin-right: 15%;
+}
+
+.theme-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--theme-color);
+    border-radius: 50%;
+    transition: 0.25s ease-in-out;
+}
+
+.theme-slider.active .theme-icon {
+    left: 35px;
+    width: 20px;
+    height: 20px;
 }
 
 body {
@@ -408,6 +455,11 @@ footer {
         padding: 4%;
     }
 
+    .theme-slider {
+        position: relative;
+        margin-right: 15%;
+    }
+
     .header__menu {
         justify-content: center;
         gap: 40px;
@@ -458,6 +510,12 @@ footer {
 @media (max-width: 768px) {
     header {
         padding: 4%;
+    }
+
+    .theme-slider {
+        position: absolute;
+        margin-right: 8%;
+        margin-top: -5px;
     }
 
     .header__menu {

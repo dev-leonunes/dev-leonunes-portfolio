@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --main-bg-color: #100F1E;
-    --text-color: #D8D8CF;
-    --primary-emphasis-color: #22d4fd;
-    --secondary-emphasis-color: #FF33D1;
-    --hover-color: #15142E;
-    --secondary-hover-color: #191839;
-    --theme-color: #080715;
-
-    --primary-font: 'Krona One', sans-serif;
-    --secundary-font: 'Montserrat', sans-serif;
-}
-
-.light-mode:root {
     --main-bg-color: #FBFBF6;
     --text-color: #555;
     --primary-emphasis-color: #22d4fd;
@@ -21,6 +8,19 @@
     --hover-color: #E0E0E0;
     --secondary-hover-color: #D8D8CF;
     --theme-color: #FDFDFA;
+
+    --primary-font: 'Krona One', sans-serif;
+    --secundary-font: 'Montserrat', sans-serif;
+}
+
+.dark-mode:root {
+    --main-bg-color: #100F1E;
+    --text-color: #D8D8CF;
+    --primary-emphasis-color: #22d4fd;
+    --secondary-emphasis-color: #FF33D1;
+    --hover-color: #15142E;
+    --secondary-hover-color: #191839;
+    --theme-color: #080715;
 
     --primary-font: 'Krona One', sans-serif;
     --secundary-font: 'Montserrat', sans-serif;

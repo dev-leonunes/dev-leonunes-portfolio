@@ -5,9 +5,10 @@
     --text-color: #555;
     --primary-emphasis-color: #22d4fd;
     --secondary-emphasis-color: #FF33D1;
-    --hover-color: #E0E0E0;
+    --hover-color: #F0F0F0;
     --secondary-hover-color: #D8D8CF;
     --theme-color: #FDFDFA;
+    --theme-bg-color: #999999;
 
     --primary-font: 'Krona One', sans-serif;
     --secundary-font: 'Montserrat', sans-serif;
@@ -21,6 +22,7 @@
     --hover-color: #15142E;
     --secondary-hover-color: #191839;
     --theme-color: #080715;
+    --theme-bg-color: #D8D8CF;
 
     --primary-font: 'Krona One', sans-serif;
     --secundary-font: 'Montserrat', sans-serif;
@@ -38,12 +40,24 @@
 
 .theme-slider {
     position: absolute;
-    width: 60px;
-    height: 30px;
-    background-color: var(--secondary-hover-color);
+    width: 70px;
+    height: 35px;
+    background-color: var(--theme-bg-color);
     border-radius: 150px;
     cursor: pointer;
     margin-right: 15%;
+}
+
+.theme-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    font-size: 13px;
+    font-weight: bolder;
+    color: var(--theme-color);
+    transition: 0.25s ease-in-out;
+    font-family: var(--secundary-font);
 }
 
 .theme-icon {
@@ -53,9 +67,13 @@
     left: 5px;
     width: 20px;
     height: 20px;
-    background-color: var(--theme-color);
+    background-color: transparent;
     border-radius: 50%;
     transition: 0.25s ease-in-out;
+}
+
+.theme-icon svg {
+    fill: var(--theme-color);
 }
 
 .theme-slider.active .theme-icon {
@@ -514,7 +532,7 @@ footer {
 
     .theme-slider {
         position: absolute;
-        margin-right: 8%;
+        margin-right: 10%;
         margin-top: -5px;
     }
 
@@ -608,6 +626,11 @@ footer {
 
     #display__contact__title {
         text-align: center;
+    }
+
+    .display__content__resume__download {
+        width: 30%;
+        margin-left: 25%;
     }
 
     .display__content__projects {

@@ -158,22 +158,15 @@ header {
     gap: 20px;
 }
 
-.project__box__1 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.project__box__1 img {
-    width: 100%;
-}
-
+.project__box__1,
 .project__box__2 {
     display: flex;
     flex-direction: column;
     width: 50%;
+    gap: 20px;
 }
 
+.project__box__1 img,
 .project__box__2 img {
     width: 100%;
 }
@@ -644,6 +637,8 @@ footer {
 
     .project__box__1,
     .project__box__2 {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 

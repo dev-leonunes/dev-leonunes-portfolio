@@ -159,7 +159,8 @@ header {
 }
 
 .project__box__1,
-.project__box__2 {
+.project__box__2,
+.project__box__3 {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -167,7 +168,8 @@ header {
 }
 
 .project__box__1 img,
-.project__box__2 img {
+.project__box__2 img,
+.project__box__3 img {
     width: 100%;
 }
 
@@ -636,7 +638,8 @@ footer {
     }
 
     .project__box__1,
-    .project__box__2 {
+    .project__box__2,
+    .project__box__3 {
         display: flex;
         flex-direction: column;
         width: 100%;
